@@ -5,10 +5,6 @@ import random
 import json
 from pathlib import Path
 
-folder_path = Path(r'C:\Users\Maverick Chan\Documents\python_work\Projects\1_Number Guessing')
-folder_path.mkdir(parents=True, exist_ok=True)
-os.chdir(folder_path)
-
 def load_leaderboard():
     path = Path('leaderboard.json')
     if path.exists():
