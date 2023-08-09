@@ -1,29 +1,9 @@
 #Number Mystery v4.0
 
-import os
 import random
-import json
-from pathlib import Path
-
-folder_path = Path(r'C:\Users\Maverick Chan\Documents\python_work\Projects\1_Number Guessing')
-folder_path.mkdir(parents=True, exist_ok=True)
-os.chdir(folder_path)
-
-
-# def load_leaderboard():
-#     path = Path('leaderboard.json')
-#     if path.exists():
-#         contents = path.read_text()
-#         return json.loads(contents)
-#     return {}
-# def save_leaderboard(leaderboard):
-#     path = Path('leaderboard.json')
-#     contents = json.dumps(leaderboard, indent=4)
-#     path.write_text(contents)
 
 print("Welcome to Number Mystery! \nGuess the number in the least number of guesses possible.")
 
-# leaderboard = load_leaderboard()
 leaderboard = {}
 
 while True:
@@ -67,7 +47,6 @@ while True:
             for key, value in top_leaderboard.items():
                 print(f"{key}: {value}")
 
-            # save_leaderboard(sorted_leaderboard)
             active = False
 
         else:
