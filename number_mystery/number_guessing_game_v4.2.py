@@ -1,4 +1,4 @@
-#Number Mystery v4.1
+#Number Mystery v4.2
 
 import os
 import random
